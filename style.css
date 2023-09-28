@@ -1,25 +1,41 @@
 body{
-
+margin:0;
+padding:0;
 }
 
 .container{
     height: 100vh;
+    display:grid;
+    grid-template-columns: 4fr 7fr 4fr;
+    grid-template-rows: 1fr 2fr 4fr 4fr 4fr;
+    grid-template-areas:
+    "name name name"
+    "profil profil photo"
+    "skills skills skills"
+    "hobbies experience experience"
+    "hobbies experience experience";
 }
 .name{
+    grid-area: name;
     background-color:rgb(87, 28, 78);
 }
 .profil{
+    grid-area: profil;
     background-color: rgb(247, 130, 29);
 }
 .photo{
+    grid-area: photo;
     background-color:rgb(87, 28, 78);
 }
 .skills{
+    grid-area: skills;
     background-color:bisque ;
 }
 .hobbies{
+    grid-area: hobbies;
     background-color: rgb(87, 28, 78);
 }
 .experience{
+    grid-area: experience;
     background: rgb(249, 46, 46);
 }
