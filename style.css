@@ -26,6 +26,9 @@ padding:0;
 .photo{
     grid-area: photo;
     background-color:rgb(87, 28, 78);
+    width:fit-content;
+    height: fit-content;
+    /*border-radius: 5px;*/
 }
 .skills{
     grid-area: skills;
@@ -39,3 +42,5 @@ padding:0;
     grid-area: experience;
     background: rgb(249, 46, 46);
 }
+
+ul li {display:inline;}
