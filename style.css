@@ -1,76 +1,89 @@
-
-
-
-body{
-    margin:0;
-    padding:0;
+body {
+    margin: 0;
+    padding: 0;
     background-color: black;
-    }
-    #grille {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 4fr 1fr;
-        background-color: bisque;
-        width: 90%;
-        height: 600px;
-        margin:auto;
-    }
-    
-    header {
-        background-color: darkmagenta;
-        grid-column: 1 / span 2;
-    }
-    nav {
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: bisque;
+}
+
+#grille {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    background-color: bisque;
+    width: 90%;
+    height: 600px;
+    margin: auto;
+}
+
+header {
+    background-color: darkmagenta;
+    grid-column: 1 / span 2;
+}
+
+nav {
     background-color: rgb(244, 51, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow:1;
+}
+
+.photo {
+    padding: 1rem;
+}
+
+#tof {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+article {
+    background-color: rgb(247, 130, 29);
+    padding-left: 14px;
+    flex-grow:2;
+}
+
+#menuskills {
+    list-style-type:square;
+
+}
+
+.skills {
+    display: flex;
+}
+
+footer {
+    background-color: rgb(87, 28, 78);
+    grid-column: 1 / span 2;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+
+section {
+    display: flex;
+    flex-direction: row;
+    border: red solid 2px;
+}
+
+
+@media (max-width:480px) {
+    section, .skills {
+        flex-direction: column;
     }
-    article {
-        background-color: rgb(247, 130, 29) ;
-        list-style-type: "<-->";
-        
-    }
-    footer {
-        background-color: rgb(87, 28, 78);
-        grid-column: 1 / span 2;
-        color:white;
-        text-align: center
-        
-    }
-    .content {
-        text-align:center;
-        padding:20px;
-        font-size: 20px;
-        font-weight: bold;
-        border: 1px solid black;
-    }
-    
-    /*
-    .container{
-        height: 100vh;
-        display:grid;
-        grid-template-columns: 4fr 7fr 4fr;
-        grid-template-rows: 1fr 2fr 4fr 4fr 4fr;
-        grid-template-areas:
-        "name name name"
-        "profil profil photo"
-        "skills skills skills"
-        "hobbies experience experience"
-        "hobbies experience experience";
-    }
-    .name{
-        grid-area: name;
-        background-color:rgb(87, 28, 78);
-    }
-    .profil{
-        grid-area: profil;
-        background-color: rgb(247, 130, 29);
-    }
-    .photo{
-        grid-area: photo;
-        background-color:rgb(87, 28, 78);
-        width:fit-content;
-        height: fit-content;
-        border-style:dotted;
-        border-color: aqua;
-        border-top-right-radius: 5%;
-        /*border-radius: 5px;*/
- 
+
+}
