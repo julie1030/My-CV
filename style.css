@@ -1,0 +1,25 @@
+body{
+
+}
+
+.container{
+    height: 100vh;
+}
+.name{
+    background-color:rgb(87, 28, 78);
+}
+.profil{
+    background-color: rgb(247, 130, 29);
+}
+.photo{
+    background-color:rgb(87, 28, 78);
+}
+.skills{
+    background-color:bisque ;
+}
+.hobbies{
+    background-color: rgb(87, 28, 78);
+}
+.experience{
+    background: rgb(249, 46, 46);
+}
