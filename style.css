@@ -28,6 +28,9 @@ padding:0;
     background-color:rgb(87, 28, 78);
     width:fit-content;
     height: fit-content;
+    border-style:dotted;
+    border-color: aqua;
+    border-top-right-radius: 5%;
     /*border-radius: 5px;*/
 }
 .skills{
@@ -43,4 +46,14 @@ padding:0;
     background: rgb(249, 46, 46);
 }
 
-ul li {display:inline;}
+ul#menuskills li {display:inline;}
+
+.list-style-type: "<->";
+        
+. grid{
+            display:grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            grid-template-rows:20% 20% 20% 20% 20%;
+            min-height: 100vh;
+            grid-area: auto;
+        } 
