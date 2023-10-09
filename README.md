@@ -1,5 +1,5 @@
 ### URL de la page web réalisée :
-https://julie1030.github.io/myCV
+https://julie1030.github.io/My-CV/
 
 ###CV
 Exercice consistant à créer un CV en ligne
